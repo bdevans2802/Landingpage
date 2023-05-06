@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <h1>Welcome to My Landing Page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia commodo imperdiet. Nunc mi metus</p>
+        <button>Learn More</button>
+    </section>
+    <section id="features">
+        <article>
+            <h2>Feature 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia commodo imperdiet. Nunc mi metus</p>
+        </article>
+        <article>
+            <h2>Feature 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia commodo imperdiet. Nunc mi metus</p>
+        </article>
+        <article>
+            <h2>Feature 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam lacinia commodo imperdiet. Nunc mi metus</p>
+        </article>
+    </section>
+    <footer>
+        <p>&copy;Evans Boakye Darko</p>
+    </footer>
+    <script>
+        // Add smooth scrolling to navigation menu links
+$(document).ready(function() {
+  $('a[href^="#"]').on('click', function(event) {
+    var target = $(this.getAttribute('href'));
+    if (target.length) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+});
+
+// Add toggle functionality to mobile menu button
+$(document).ready(function() {
+  $('.mobile-menu-button').on('click', function() {
+    $('nav ul').toggleClass('show');
+  });
+});
+
+
+    </script>
+</body>
+</html>

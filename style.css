@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+header{
+    background-color: #c13535;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+}
+nav li{
+    margin: 0 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #f8f8f8;
+    font-size: 18px;
+}
+nav a:hover{
+    color: #0176f2;
+}
+#hero{
+    background-image: url('alex-kulikov-vBpefozS0As-unsplash\ \(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero h1{
+    color: #ffffff;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#hero p{
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#hero button{
+    background-color: #007bff;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),7px 7px 20px 0px rgba(0, 0, 0, 0.1),4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+#hero button:hover{
+    width: 0;
+    left: 0;
+    background-color: #c13535;
+}
+#features{
+    background-color: #ffffff;
+    padding: 80px 40px;
+}
+#features h2{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#features p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#features article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#features article h2{
+    margin-bottom: 20px;
+}
+#features article p{
+    text-align: center;
+}
+/* Style footer*/
+footer{
+    background-color: #f8f8f8;
+    padding: 25px 0;
+    text-align: center;
+}
+footer p{
+    font-size: 14px;
+    color: #999999;
+}
+@media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    
+    h1 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  
